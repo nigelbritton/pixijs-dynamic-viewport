@@ -1,0 +1,60 @@
+.layout,
+.screen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:#000;
+& > canvas {
+        position:absolute;
+        height:100%;
+        width:100%;
+    }
+}
+.screen {
+.tl,
+.tc,
+.tr,
+.bl,
+.bc,
+.br,
+.ml,
+.mc,
+.mr { position:absolute; z-index:1; }
+.tl,
+.tc,
+.tr { top:0; padding-top:16px; }
+.tl, .tc { left:0; padding-left:16px; }
+.tr, .tc { right:0; padding-right:16px; }
+.tc { text-align:center; }
+.bl,
+.bc,
+.br { bottom:0; padding-bottom:16px; }
+.bl, .bc { left:0; padding-left:16px; }
+.br, .bc { right:0; padding-right:16px; }
+.bc { text-align:center; }
+.ml { left:0; padding-left:16px; }
+.mc { top:50%; left:50%;  transform:translate(-50%,-50%); }
+.mr { right:0; padding-right:16px; }
+.button-block,
+.button {
+    display:inline-block;
+    background-color:#666;
+    height:64px;
+    width:64px;
+    font-size:32px;
+    text-align:center;
+    cursor:pointer;
+    line-height:64px;
+&:hover .fas { color:#fff; }
+}
+.button-block {
+    padding: 0 16px;
+    width:auto;
+    background-color:transparent;
+    cursor:inherit;
+    color:#fff;
+.fas { color:#fff; }
+}
+}

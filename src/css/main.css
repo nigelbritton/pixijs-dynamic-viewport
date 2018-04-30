@@ -1,0 +1,95 @@
+.layout,
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000; }
+  .layout > canvas,
+  .screen > canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+
+.screen .tl,
+.screen .tc,
+.screen .tr,
+.screen .bl,
+.screen .bc,
+.screen .br,
+.screen .ml,
+.screen .mc,
+.screen .mr {
+  position: absolute;
+  z-index: 1; }
+
+.screen .tl,
+.screen .tc,
+.screen .tr {
+  top: 0;
+  padding-top: 16px; }
+
+.screen .tl, .screen .tc {
+  left: 0;
+  padding-left: 16px; }
+
+.screen .tr, .screen .tc {
+  right: 0;
+  padding-right: 16px; }
+
+.screen .tc {
+  text-align: center; }
+
+.screen .bl,
+.screen .bc,
+.screen .br {
+  bottom: 0;
+  padding-bottom: 16px; }
+
+.screen .bl, .screen .bc {
+  left: 0;
+  padding-left: 16px; }
+
+.screen .br, .screen .bc {
+  right: 0;
+  padding-right: 16px; }
+
+.screen .bc {
+  text-align: center; }
+
+.screen .ml {
+  left: 0;
+  padding-left: 16px; }
+
+.screen .mc {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.screen .mr {
+  right: 0;
+  padding-right: 16px; }
+
+.screen .button-block,
+.screen .button {
+  display: inline-block;
+  background-color: #666;
+  height: 64px;
+  width: 64px;
+  font-size: 32px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 64px; }
+  .screen .button-block:hover .fas,
+  .screen .button:hover .fas {
+    color: #fff; }
+
+.screen .button-block {
+  padding: 0 16px;
+  width: auto;
+  background-color: transparent;
+  cursor: inherit;
+  color: #fff; }
+  .screen .button-block .fas {
+    color: #fff; }
